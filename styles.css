@@ -10,17 +10,16 @@ body {
 @keyframes waving-hand {
   from {
     transform: rotate(50deg);
-    transform-origin: bottom right;
   }
   to {
     transform: rotate(0deg);
-    transform-origin: bottom right;
   }
 }
 
 .wave {
   display: inline-block;
   font-size: 13rem;
+  transform-origin: bottom right;
   animation: waving-hand 1500ms ease-in-out alternate;
   animation-iteration-count: infinite;
 }
